@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlternatingCase\StringExt.cs" />
     <Compile Include="ArraysInversion\ArraysInversion.cs" />
     <Compile Include="Mumbling\Accumul1.cs" />
     <Compile Include="Mumbling\Accumul2.cs" />
