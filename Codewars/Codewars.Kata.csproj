@@ -51,11 +51,14 @@
     <Compile Include="Mumbling\Accumul2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReverseOrRotate\Revrot.cs" />
+    <Compile Include="SumOfNum0toN\SequenceSum.cs" />
     <Compile Include="SumWithoutHighestAndLowest\SumWithoutHighestAndLowest.cs" />
     <Compile Include="TheSupermarketQueue\TheSupermarketQueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

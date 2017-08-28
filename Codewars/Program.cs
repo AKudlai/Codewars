@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Runtime.InteropServices;
     using System.Text;
     using System.Threading.Tasks;
 
@@ -12,8 +13,7 @@
     {
         public static void Main(string[] args)
         {
-            string s = "1h2N3p4";           
-            Console.WriteLine(s.ToAlternatingCase());
+            Console.WriteLine(SumOfNum0toN.SequenceSum.ShowSequence(0));          
         }
     }
 }
