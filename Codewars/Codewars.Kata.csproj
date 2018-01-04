@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="AlternatingCase\StringExt.cs" />
     <Compile Include="ArraysInversion\ArraysInversion.cs" />
+    <Compile Include="CountСharInYourString\Kata.cs" />
+    <Compile Include="FindTheCapitals\FindTheCapitals.cs" />
     <Compile Include="Mumbling\Accumul1.cs" />
     <Compile Include="Mumbling\Accumul2.cs" />
     <Compile Include="Program.cs" />

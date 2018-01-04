@@ -13,7 +13,10 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(SumOfNum0toN.SequenceSum.ShowSequence(0));          
+            foreach (int capital in FindTheCapitals.FindTheCapitals.Capitals("CodEWaRs"))
+            {
+                Console.Write(capital);
+            }
         }
     }
 }

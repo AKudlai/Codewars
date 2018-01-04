@@ -2,37 +2,36 @@
 {
     using Codewars.AlternatingCase;
 
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Xunit;
 
-    [TestClass]
-    public class Test
+    public class AlternatingCaseUnitTest
     {
-        [TestMethod]
+        [Fact]
         public void CanAlternateCase()
         {
             // Arrange
-            string s1 = "hello world";
-            string s2 = "HELLO WORLD";
-            string s3 = "hello WORLD";
-            string s4 = "HeLLo WoRLD";
-            string s5 = "12345";
-            string s6 = "1a2b3c4d5e";
-            string s7 = "String.ToAlternatingCase";
-            string s8 = "Hello World";
+            const string S1 = "hello world";
+            const string S2 = "HELLO WORLD";
+            const string S3 = "hello WORLD";
+            const string S4 = "HeLLo WoRLD";
+            const string S5 = "12345";
+            const string S6 = "1a2b3c4d5e";
+            const string S7 = "String.ToAlternatingCase";
+            const string S8 = "Hello World";
 
 
             // Act
 
 
             // Assert
-            Assert.AreEqual("HELLO WORLD", s1.ToAlternatingCase());
-            Assert.AreEqual("hello world", s2.ToAlternatingCase());
-            Assert.AreEqual("HELLO world", s3.ToAlternatingCase());
-            Assert.AreEqual("hEllO wOrld", s4.ToAlternatingCase());
-            Assert.AreEqual("12345", s5.ToAlternatingCase());
-            Assert.AreEqual("1A2B3C4D5E", s6.ToAlternatingCase());
-            Assert.AreEqual("sTRING.tOaLTERNATINGcASE", s7.ToAlternatingCase());
-            Assert.AreEqual("Hello World", s8.ToAlternatingCase().ToAlternatingCase(), "Hello World => hELLO wORLD => Hello World");
+            Assert.Equal("HELLO WORLD", S1.ToAlternatingCase());
+            Assert.Equal("hello world", S2.ToAlternatingCase());
+            Assert.Equal("HELLO world", S3.ToAlternatingCase());
+            Assert.Equal("hEllO wOrld", S4.ToAlternatingCase());
+            Assert.Equal("12345", S5.ToAlternatingCase());
+            Assert.Equal("1A2B3C4D5E", S6.ToAlternatingCase());
+            Assert.Equal("sTRING.tOaLTERNATINGcASE", S7.ToAlternatingCase());
+            Assert.Equal("Hello World", S8.ToAlternatingCase().ToAlternatingCase());
         }
     }
 }

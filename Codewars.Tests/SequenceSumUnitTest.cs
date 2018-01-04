@@ -2,17 +2,14 @@
 {
     using Codewars.SumOfNum0toN;
 
-    using NUnit.Framework;
+    using Xunit;
 
-    using Assert = NUnit.Framework.Assert;
-
-    [TestFixture]
     public class SequenceSumTests
     {
-        [Test]
+        [Fact]
         public void BasicTests()
         {
-            Assert.AreEqual("0+1+2+3+4+5+6 = 21", SequenceSum.ShowSequence(6));
+            Assert.Equal("0+1+2+3+4+5+6 = 21", SequenceSum.ShowSequence(6));
         }
     }
 }

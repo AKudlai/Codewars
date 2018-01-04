@@ -2,26 +2,27 @@
 {
     using System;
 
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Codewars.ReverseOrRotate;
 
-    [TestClass]
+    using Xunit;
+
     public class ReverseOrRotate
     {
-        [TestMethod]
+        [Fact]
         public void CanRevertRot()
         {
             // Arrange
             Console.WriteLine("Testing RevRot");
-            testing(Revrot.RevRot("1234", 0), "");
-            testing(Revrot.RevRot("", 0), "");
-            testing(Revrot.RevRot("1234", 5), "");
-            String s = "733049910872815764";
-            testing(Revrot.RevRot(s, 5), "330479108928157");
+            Testing(Revrot.RevRot("1234", 0), string.Empty);
+            Testing(Revrot.RevRot(string.Empty, 0), string.Empty);
+            Testing(Revrot.RevRot("1234", 5), string.Empty);
+            string s = "733049910872815764";
+            Testing(Revrot.RevRot(s, 5), "330479108928157");
         }
 
-        private static void testing(string actual, string expected)
+        private static void Testing(string actual, string expected)
         {
-            Assert.AreEqual(expected, actual);
+            Assert.Equal(expected, actual);
         }
     }
 }
